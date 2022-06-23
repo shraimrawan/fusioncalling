@@ -1,2 +1,2 @@
 # fusioncalling
-Fusion calling using Arriba and 
+Fusion calling using Arriba and Star Fusion 
