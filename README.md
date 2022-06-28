@@ -13,12 +13,19 @@ conda env rnafusion2
             --right_fq $read2 \
             --CPU 6 \
             --output_dir $output file 
-
+4. Filter fusion calls 
+  a. FFPM >= 1 
+  b. Take out any annotations identified in GTEx 
 
 Arriba 
 conda env arriba.v2
 1. Create text file with prefix, fastq #1, fastq #, fusion.tsv, discarded.fusion.tsv
 2. Use STAR to align and same references as STAR fusion above 
+3. Filter fusion calls 
+  a. reading frame - take out, out-of-frame and "." 
+  b. confidence - high and can consider medium 
+  
+Arriba will have more fusion calls than Star Fusion. 
 
 
 
